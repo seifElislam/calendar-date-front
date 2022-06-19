@@ -50,10 +50,6 @@ export default {
     this.hijri = apiCall.data.calendars.hijri
     this.gregorian = apiCall.data.calendars.gregorian
     this.quote = apiCall.data.quote
-  // for (const calendar in apiCall.data.calendars) {
-  //   console.log('------')
-  //   console.log(apiCall.data.calendars[calendar])
-  // }
   }
 }
 </script>
@@ -69,6 +65,7 @@ export default {
     /* height: 85vh; */
 
     /* background-color: lightgray; */
+    font-family: 'Amiri', serif;
 }
 
 .container__content {
@@ -80,7 +77,7 @@ export default {
     padding: var(--default-padding);
     color: var(--color-white);
     z-index: 1;
-    width: 35%;
+    width: 40%;
     height: 20%;
 }
 
@@ -103,6 +100,7 @@ td {
 }
 
 .container_dates_table {
+    border: 1px solid lightgray;
     table-layout: fixed;
     width: 100%;
     text-align: center;
@@ -112,9 +110,9 @@ td {
     width: 100%;
     height: 90%;
     border-collapse: collapse;
-    border-style: hidden;
-    border-radius: 5px;
-    color: darkblue;
+    /* border-style: hidden; */
+    /* border-radius: 10px; */
+    color: black;
 }
 
 .container__weekday {
@@ -148,7 +146,7 @@ h2 {
 }
 
 .container__quote {
-    height: 50px;
+    height: 100px;
     font-family: 'Amiri', serif;
 }
 
@@ -177,6 +175,7 @@ h2 {
     border-color: lightslategray;
     background-color: white;
     font-family: 'Amiri', serif;
+    display: inline-table;
   }
 
 </style>
